@@ -1,0 +1,26 @@
+.button {
+  border: 0;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  color: @base-black;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  color: @base-white;
+
+  &--basic {
+    background-color: @base-primary;
+  }
+
+  &:hover, &:focus {
+    background-color: @primary-lighter;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+  }
+
+  &:disabled {
+    background-color: @base-grey;
+    cursor: auto;
+  }
+}

@@ -1,0 +1,81 @@
+.swiper .swiper__pagination {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    bottom: 70px;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  border-radius: 0;
+  height: 4px;
+  width: 62px;
+  background-color: @base-white;
+  opacity: 1;
+
+  &:hover {
+    background-color: @primary-opacity;
+  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: @base-primary;
+}
+
+.swiper .swiper__button {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  top: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right, @base-white 0%, transparent 70%);
+  }
+
+  &:active {
+    background: linear-gradient(to right, @base-primary -200%, transparent 70%);
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 642px;
+    width: 80px;
+    top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+    top: 21px;
+  }
+}
+
+.swiper .swiper-button-prev {
+  left: 0;
+
+  &::after {
+    content: "";
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: center center no-repeat url("../../img/arrowpromo.svg")
+      transparent;
+  }
+}
+
+.swiper .swiper-button-next {
+  right: 0;
+  transform: scale(-1, 1);
+
+  &::after {
+    content: "";
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: center center no-repeat url("../../img/arrowpromo.svg")
+      transparent;
+  }
+}

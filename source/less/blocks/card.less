@@ -1,0 +1,60 @@
+.card {
+  background-color: @base-white;
+  padding: 40px 20px 22px;
+}
+
+.card__image-link {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card__title {
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: @base-black;
+  margin-bottom: 4px;
+}
+
+.card__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.card__purchase {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.card__basket-button {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+  padding: 8px 20px 8px 46px;
+}
+
+.card__basket-button::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  background-image: url('../../img/union.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 20px;
+  top: 10px;
+  stroke: @base-white;
+}
