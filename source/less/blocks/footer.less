@@ -168,15 +168,22 @@
   padding-bottom: 30px;
 }
 
-.footer__copyright-link {
-  color: @base-grey;
+.footer__copyright-content {
+  display: flex;
+  justify-content: center;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  color: @base-grey;
+}
+
+.footer__copyright-link {
+  color: @base-grey;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
+  margin-left: 3px;
 
   svg {
     fill: @base-grey;
