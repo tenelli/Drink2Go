@@ -1,87 +1,80 @@
 .pagination {
   background-color: @lightest-grey;
+  padding-top: 40px;
+  padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    width: min-content;
+    margin-left: auto;
+    margin-right: -20px;
+  }
 }
 
 .pagination__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
+  gap: 20px;
 
   @media (min-width: @tablet-width) {
-    justify-content: flex-start;
-  }
-}
-
-.pagination__span {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
+    justify-content: flex-end;
   }
 }
 
 .pagination__button {
   border: none;
-  width: 40px;
-  height: 40px;
   background-color: @base-white;
   color: @base-primary;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  width: 40px;
+  height: 40px;
 
   &--current {
-    color: @base-black;
     background-color: transparent;
+    color: @base-black;
+    font-weight: 600;
   }
-
 
   @media (max-width: @mobile-width-only) {
-    &--back {
-      margin-right: 20px;
+
+    span {
+      display: none;
     }
 
-    &--next {
-      margin-left: 20px;
+    svg {
+      fill: @base-primary;
     }
 
-    &:hover, &:focus, &:active {
-      color: @base-black;
-      background-color: transparent;
-
+    &:hover, &:focus, &:active, &:disabled {
       svg {
-        stroke: @base-black;
+        fill: @base-white;
       }
     }
-
   }
+
   @media (min-width: @tablet-width) {
     &--back, &--next {
-      width: 150px;
+      padding: 8px 20px;
+      width: fit-content;
     }
   }
-}
 
-.pagination__svg {
-
-  @media (min-width: @tablet-width) {
-    display: none;
+  &:hover, &:focus, &:active, &:disabled {
+    font-weight: 400;
+    color: @base-white;
   }
-}
 
-.pagination__item--next, .pagination__item--back {
+  &:hover, &:focus {
+    background-color: @primary-lighter;
+  }
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    width: 180px;
+  &:active {
+    background-color: @primary-darker;
+  }
 
-    &:hover .pagination__button {
-      color: @base-black;
-      background-color: transparent;
-
-      .pagination__span--special {
-        display: none;
-      }
-    }
+  &:disabled {
+    background-color: @lightest-grey;
   }
 }

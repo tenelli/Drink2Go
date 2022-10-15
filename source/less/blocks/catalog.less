@@ -46,7 +46,11 @@
 
 .catalog__fieldset {
   padding: 0;
-  border: 0
+  border: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px; //на глаз, поправить пп
+  }
 }
 
 .catalog__legend {
@@ -64,6 +68,18 @@
   align-items: center;
   padding-top: 33px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 18px;
+  }
 }
 
 .catalog__form-button {
@@ -92,12 +108,52 @@
   &--reset:hover, &--reset:focus, &--reset:active, &--reset:disabled {
     color: @base-white;
   }
+
+  @media (min-width: @desktop-width) {
+    width: fit-content;
+  }
 }
 
 .catalog__sorting {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .catalog__item {
   margin-bottom: 20px;
+}
+
+.catalog__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: fit-content;
+  }
+}
+
+.catalog__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 317px 317px 317px;
+  }
+}
+
+.catalog__select-goods {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
 }

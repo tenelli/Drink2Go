@@ -1,6 +1,10 @@
 .card {
   background-color: @base-white;
   padding: 40px 20px 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 30px 30px;
+  }
 }
 
 .card__image-link {
@@ -16,6 +20,12 @@
   font-weight: 700;
   color: @base-black;
   margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
 }
 
 .card__description {
@@ -25,6 +35,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .card__purchase {
