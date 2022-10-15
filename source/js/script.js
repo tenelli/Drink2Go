@@ -54,5 +54,4 @@ const map = L.map('map')
     }
   )
   .bindPopup("Drink2Go - Интернет магазин кофейных напитков")
-  .addTo(map);;
-
+  .addTo(map);

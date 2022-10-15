@@ -24,7 +24,7 @@
   border: none;
   background-color: @base-white;
   color: @base-primary;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -38,7 +38,6 @@
   }
 
   @media (max-width: @mobile-width-only) {
-
     span {
       display: none;
     }
@@ -47,7 +46,10 @@
       fill: @base-primary;
     }
 
-    &:hover, &:focus, &:active, &:disabled {
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
       svg {
         fill: @base-white;
       }
@@ -55,18 +57,23 @@
   }
 
   @media (min-width: @tablet-width) {
-    &--back, &--next {
+    &--back,
+    &--next {
       padding: 8px 20px;
       width: fit-content;
     }
   }
 
-  &:hover, &:focus, &:active, &:disabled {
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
     font-weight: 400;
     color: @base-white;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: @primary-lighter;
   }
 

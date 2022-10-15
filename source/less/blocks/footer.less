@@ -33,7 +33,8 @@
   padding: 10px;
   border-radius: 4px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: @base-primary;
     background-color: @base-secondary;
   }
@@ -52,7 +53,7 @@
 .footer__contacts-link {
   font-size: 14px;
   line-height: 20px;
-  font-size: 400;
+  font-weight: 400;
   color: @base-black;
 }
 
@@ -62,7 +63,7 @@
 
 .footer__contacts-item--address::before,
 .footer__contacts-item--phone::before {
-  content: '';
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -72,11 +73,11 @@
 }
 
 .footer__contacts-item--address::before {
-  background-image: url('../img/address.svg');
+  background-image: url("../img/address.svg");
 }
 
 .footer__contacts-item--phone::before {
-  background-image: url('../img/phone.svg');
+  background-image: url("../img/phone.svg");
 }
 
 .footer__title {
@@ -149,7 +150,8 @@
   letter-spacing: 0.02em;
 }
 
-.footer__nav-item:not(:last-of-type), .footer__media-item:not(:last-of-type) {
+.footer__nav-item:not(:last-of-type),
+.footer__media-item:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
