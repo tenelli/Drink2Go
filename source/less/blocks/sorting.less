@@ -1,7 +1,9 @@
 .sorting {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 18px;
+  padding-left: 3px;
+  padding-right: 7px;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
@@ -16,6 +18,7 @@
 }
 
 .sorting__options {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: @base-primary;
@@ -23,4 +26,5 @@
   background-color: inherit;
   cursor: pointer;
   font-weight: 600;
+  width: 150px;
 }

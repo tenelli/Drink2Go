@@ -19,12 +19,14 @@
 
       .main-nav__list {
         display: block;
-        position: static;
-        min-height: 0;
       }
 
       .main-nav__item {
         display: block;
+      }
+
+      .main-nav__container {
+        margin-bottom: 230px;
       }
     }
   }
@@ -36,6 +38,7 @@
 
   @media (max-width: @mobile-width-only) {
     width: 280px;
+    height: 60px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -69,6 +72,7 @@
 
 .main-nav__button:not(:last-of-type) {
   padding: 22px;
+  max-height: 16px;
 
   &:active {
     background-color: @base-secondary;
@@ -82,7 +86,7 @@
 .main-nav__list {
   @media (max-width: @mobile-width-only) {
     position: absolute;
-    top: 65px;
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: @base-white;
@@ -156,8 +160,8 @@
   height: 16px;
   border: none;
   top: 2px;
-  left: 124px;
-  padding: 30px;
+  left: 122px;
+  padding: 28px;
 
   &:active {
     background-color: @base-secondary;
@@ -227,5 +231,11 @@
 
   @media (max-width: @mobile-width-only) {
     position: relative;
+  }
+}
+
+.main-nav__burger-button {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
