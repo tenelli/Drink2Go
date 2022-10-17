@@ -49,6 +49,10 @@
   padding: 0;
   border: 0;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 2px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
   }
@@ -61,6 +65,10 @@
   font-weight: 600;
   color: @base-black;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .catalog__buttons-wrapper {
@@ -73,10 +81,10 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 180px;
+    padding-top: 14px;
     padding-bottom: 0;
-    margin-bottom: 44px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,6 +97,10 @@
   min-height: 45px;
   border-radius: 4px;
 
+  @media (min-width: @tablet-width) {
+    padding: 2px;
+  }
+
   &--apply {
     font-size: 13px;
     line-height: 24px;
@@ -96,6 +108,7 @@
 
     @media (min-width: @tablet-width) {
       font-size: 14px;
+      width: 150px;
     }
   }
 
@@ -103,6 +116,10 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
+
+    @media (min-width: @tablet-width) {
+      width: 141px;
+    }
   }
 
   &--reset:hover,
@@ -121,7 +138,7 @@
   margin-bottom: 4px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 }
 
@@ -129,7 +146,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -143,6 +159,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    row-gap: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,5 +171,17 @@
   @media (min-width: @desktop-width) {
     display: flex;
     gap: 30px;
+  }
+}
+
+.catalog__range {
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.catalog__milk {
+  @media (min-width: @tablet-width) {
+    margin-right: 38px;
   }
 }

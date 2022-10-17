@@ -103,7 +103,7 @@
 
   @media (min-width: @tablet-width) {
     width: 728px;
-    padding: 40px 20px 12px;
+    padding: 35px 20px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -144,6 +144,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 20px;
+    padding-top: 4px;
   }
 }
 
@@ -164,16 +165,30 @@
 .footer__media {
   padding-top: 22px;
   padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    margin-left: 10px;
+  }
 }
 
 .footer__contacts {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .footer__copyright {
   padding-top: 8px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 }
 
 .footer__copyright-content {

@@ -2,6 +2,12 @@
   min-height: 636px;
   padding-top: 20px;
 
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   &--decaf {
     background-color: @flat-white;
   }
@@ -61,7 +67,7 @@
   color: @base-black;
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-align: center;
   font-weight: 700;
   margin-top: 0;
@@ -70,6 +76,7 @@
   @media (min-width: @tablet-width) {
     font-size: 56px;
     line-height: 80px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,7 +96,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -142,7 +148,7 @@
 .promo__image {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 378px;
+    top: 350px;
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
@@ -166,7 +172,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 620px;
-    padding-top: 60px;
+    padding-top: 53px;
 
     &--decaf {
       background-color: @flat-white;
