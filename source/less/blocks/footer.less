@@ -6,7 +6,7 @@
   @media (min-width: @desktop-width) {
     width: 1360px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 25px 40px 0;
     display: flex;
   }
 }
@@ -89,7 +89,7 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 49px;
   }
 }
@@ -111,6 +111,7 @@
     padding: 0;
     max-width: 318px;
     margin-right: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -137,6 +138,10 @@
 .footer__navigation {
   padding-top: 20px;
   padding-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .footer__info-block {
@@ -145,6 +150,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 20px;
     padding-top: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -170,6 +179,10 @@
     padding-top: 20px;
     margin-left: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .footer__contacts {
@@ -178,6 +191,10 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -188,6 +205,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
   }
 }
 
